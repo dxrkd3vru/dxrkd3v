@@ -1,3 +1,24 @@
+/*== Добавим аватар ==*/
+.author {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.author-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -webkit-animation: 0.5s ease-in forwards fadein;
+    animation: 0.5s ease-in forwards fadein;
+  }
+
+
+
+
+
 a,
 abbr,
 acronym,
@@ -105,6 +126,7 @@ body {
 ol,
 ul {
     list-style: none;
+    list-style-type: none;
 }
 blockquote,
 q {
@@ -191,10 +213,12 @@ ul {
     margin-top: 0;
     padding-left: 32px;
     margin-bottom: 16px;
+    list-style-type: none;
 }
 ol li,
 ul li {
     margin-top: 4px;
+    list-style-type: none;
 }
 ul {
     list-style: disc;
