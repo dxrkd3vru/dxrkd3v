@@ -47,7 +47,8 @@
                             Она полезна, когда необходима цепочка if else для проверки на равенство. Например:
                         </p>
                         <pre>
-<code>if (status === 'processing') {
+<code>
+    if (status === 'processing') {
     // Делаем раз
     } else if (status === 'paid') {
     // Делаем два
@@ -56,6 +57,7 @@
     } else {
     // Делаем четыре
     }
+
 </code>
                         </pre>
                         <p>
@@ -64,7 +66,8 @@
                             Оператор switch позволяет более кратко и выразительно записать этот код: 
                         </p>
                         <pre>
-<code>switch (status) {
+<code>
+    switch (status) {
     case 'processing': // status === 'processing' (строгое соответствие)
       // Делаем раз
       break;
@@ -76,7 +79,8 @@
       break;
     default: // else
       // Делаем четыре
-  }
+    }
+
 </code>
                         </pre>
                         <p>
@@ -106,7 +110,8 @@
                             разрешено выполнять произвольный код, открывая широкие возможности для логики программы
                         </p>
                         <pre>
-<code>switch (count) {
+<code>
+    switch (count) {
     case 1:
       // Делаем что-то полезное
       break;
@@ -115,7 +120,8 @@
       break;
     default:
       // Что-то делаем
-  }
+    }
+
 </code>
                         </pre>
                         <p>
@@ -129,7 +135,8 @@
                             заполнить её внутри блока case, а затем вернуть значение этой переменной в конце функции. 
                         </p>
                         <pre>
-<code>(count) => {
+<code>
+    (count) => {
     // Объявляем переменную
     let result;
     
@@ -148,6 +155,7 @@
     // Возвращаем
     return result;
     };
+
 </code>
                         </pre>
                         <p>
@@ -158,7 +166,8 @@
                             исполнение функции завершается, можно избавиться от использования оператора break: 
                         </p>
                         <pre>
-<code>(count) => {
+<code>
+    (count) => {
     switch (count) {
       case 1:
         return 'one';
@@ -166,8 +175,8 @@
         return 'two';
       default:
         return null;
-    }
-  };
+        }
+    };
 </code>
                         </pre>
                         <p>

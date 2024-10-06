@@ -44,16 +44,18 @@
                             Возьмем функцию которая возвращает модуль переданного числа
                         </p>
                         <pre>
-<code>const abs = (number) => {
-    if (number >= 0) {
-      return number;
-    }
+<code>
+    const abs = (number) => {
+        if (number >= 0) {
+            return number;
+        }
   
     return -number;
-  };
+    };
   
-  abs(10); // 10
-  abs(-10); // 10
+    abs(10); // 10
+    abs(-10); // 10
+    
 </code>
                         </pre>
                         <p>
@@ -65,16 +67,20 @@
                             Тернарный оператор всегда требует три операнда
                         </p>
                         <pre>
-<code>const abs = (number) => {
-    return number >= 0 ? number : -number;
-  };
+<code>
+    const abs = (number) => {
+        return number >= 0 ? number : -number;
+    };
+
 </code>
                         </pre>
                         <p>
                             Сокращенный вариант фукции abs с использованием тернарного оператора выглятит следующим образом
                         </p>
                         <pre>
-<code>const abs = (number) => (number >= 0 ? number : -number);
+<code>
+    const abs = (number) => (number >= 0 ? number : -number);
+    
 </code>
                         </pre>
                         <p>

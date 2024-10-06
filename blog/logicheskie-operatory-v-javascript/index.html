@@ -46,14 +46,16 @@
                             Если мы хотим чтобы пароль был не менее 8 символов и более 20 то функция выполняющая такую проверку будет такой
                         </p>
                         <pre>
-<code>const isStrongPassword = (password) => {
+<code>
+    const isStrongPassword = (password) => {
     const length = password.length;
         return length > 8 && length < 20;
-};
+    };
                               
-isStrongPassword('qwerty'); // false
-isStrongPassword('qwerty1234'); // true
-isStrongPassword('zxcvbnmasdfghjkqwertyui'); // false
+    isStrongPassword('qwerty'); // false
+    isStrongPassword('qwerty1234'); // true
+    isStrongPassword('zxcvbnmasdfghjkqwertyui'); // false
+
 </code>
                         </pre>
                         <p>
@@ -69,28 +71,36 @@ isStrongPassword('zxcvbnmasdfghjkqwertyui'); // false
                             поэтому при комбинировании лучше их ставить в скобки. Вот улучшенный пример для проверки пароля
                         </p>
                         <pre>
-<code>const isStrongPassword = (password) => {
+<code>
+    const isStrongPassword = (password) => {
     const length = password.length;
 
     return length > 8 && (hasSpecialChars(password) || hasCapitalChars(password));
-};
+    };
+
 </code>
                         </pre>
                         <p>Ниже таблица истинности поведения оператора && И</p><pre>
-<code>(a, true) && (b, true) // ==> true
-(a, true) && (b, false) // ==> false
-(a, false) && (b, true) // ==> false
-(a, false) && (b, false) // ==> false
+<code>
+    (a, true) && (b, true) // ==> true
+    (a, true) && (b, false) // ==> false
+    (a, false) && (b, true) // ==> false
+    (a, false) && (b, false) // ==> false
+
 </code>
                         </pre>
                         <p>
                             И таблица истинности оператора || ИЛИ
                         </p>
-<pre><code>(a, true) || (b, true) // ==> true
-(a, true) || (b, false) // ==> true
-(a, false) || (b, true) // ==> true
-(a, false) || (b, false) // ==> false
-</code></pre>
+<pre>
+<code>
+    (a, true) || (b, true) // ==> true
+    (a, true) || (b, false) // ==> true
+    (a, false) || (b, true) // ==> true
+    (a, false) || (b, false) // ==> false
+
+</code>
+</pre>
                     </div>
                     <h3>Оператор отрицания</h3>
                     <p>
@@ -103,10 +113,12 @@ isStrongPassword('zxcvbnmasdfghjkqwertyui'); // false
                         то с помощью унарного отрицания можно проверить обратное
                     </p>
                     <pre>
-<code>const isEven = (number) => number % 2 === 0;
+<code>
+    const isEven = (number) => number % 2 === 0;
 
-isEven(10);  // true
-!isEven(10); // false
+    isEven(10);  // true
+    !isEven(10); // false
+    
 </code>
                     </pre>
                     <p>

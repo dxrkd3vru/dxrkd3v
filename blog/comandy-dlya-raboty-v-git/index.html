@@ -50,7 +50,9 @@
                             кавычки можно не ставить.
                         </p>
                         <pre>
-<code>  git config --global user.name "Dxrkd3v"
+<code>  
+    git config --global user.name "Dxrkd3v"
+
 </code>
                         </pre>
                         <p>Укажем почту</p>
@@ -60,7 +62,9 @@
                             который зарегистрирован на GitHub.
                         </p>
                         <pre>
-<code>  git config --global user.email "dxrkd3v@ro.ru"
+<code>  
+    git config --global user.email "dxrkd3v@ro.ru"
+
 </code>
                         </pre>
                         <p>
@@ -71,7 +75,9 @@
                             но этот способ быстрее.
                         </p>
                         <pre>
-<code>  git config --list
+<code>  
+    git config --list
+
 </code>
                         </pre>
                         <h3>Работа с репозиторием</h3>
@@ -82,7 +88,9 @@
                             Инициализирует пустой репозиторий.
                         </p>
                         <pre>
-<code> git init 
+<code> 
+    git init 
+
 </code>
                         </pre>
                         <p>
@@ -92,13 +100,19 @@
                             Проект появится в текучей директории.
                         </p>
                         <pre>
-<code> git clone [ссылка на репозиторий]</code>
+<code> 
+    git clone [ссылка на репозиторий]
+
+</code>
                         </pre>
                         <p>
                             Привяжем репозиторий на GitHub с локальной версией
                         </p>
                         <pre>
-<code> git remote add origin [ссылка на репозиторий]</code>
+<code> 
+    git remote add origin [ссылка на репозиторий]
+
+</code>
                         </pre>
                         <h3>Работа с изменениями</h3>
                         <p>
@@ -108,7 +122,10 @@
                             Эта команда тенет все изминения в проект из GitHub
                         </p>
                         <pre>
-<code> git pull </code>
+<code> 
+    git pull 
+
+</code>
                         </pre>
                         <p>
                             Посмотрим на статус файлов
@@ -118,15 +135,20 @@
                             кроме закомиченных. Можно набрать git s если alias прописан. 
                         </p>
                         <pre>
-<code> git status</code>
+<code> 
+    git status
+
+</code>
                         </pre>
                         <p>
                             Примерный ответ
                         </p>
                         <pre>
-                            <code> ➜  dxrkd3v git:(main) ✗ git s
-On branch main
-Your branch is up to date with 'origin/main'.
+<code> 
+    ➜  dxrkd3v git:(main) ✗ git s
+    On branch main
+    Your branch is up to date with 'origin/main'.
+
 </code>
                         </pre>
                         <p>
@@ -139,7 +161,10 @@ Your branch is up to date with 'origin/main'.
                             После добавления в индекс, можно сохраняться. 
                         </p>
                         <pre>
-<code> git add .</code>
+<code> 
+    git add .
+
+</code>
                         </pre>
                         <p>
                             Закомитим изминения
@@ -151,7 +176,10 @@ Your branch is up to date with 'origin/main'.
                             сохранений на локалке не будет. 
                         </p>
                         <pre>
-<code> git commit -m "Комментарий к коммиту"</code>
+<code> 
+    git commit -m "Комментарий к коммиту"
+
+</code>
                         </pre>
                         <p>
                             Посмотрим на историю коммитов
@@ -165,7 +193,10 @@ Your branch is up to date with 'origin/main'.
                             а также текст коммита.
                         </p>
                         <pre>
-<code> git log</code>
+<code> 
+    git log
+
+</code>
                         </pre>
                         <p>
                             Запушим изминения
@@ -175,26 +206,38 @@ Your branch is up to date with 'origin/main'.
                             изминения с локалки на GitHub.
                         </p>
                         <pre>
-<code> git push</code>
+<code> 
+    git push
+
+</code>
                         </pre>
                     </div>
                     <p>
                         Отменим изменения не добавленные в индекс.
                     </p>
                     <pre>
-<code> git restore [имя-файла]</code>
+<code> 
+    git restore [имя-файла]
+
+</code>
                     </pre>
                     <p>
                         Отменим изменения добавленные в индекс. 
                     </p>
                     <pre>
-<code> git reset --hard</code>
+<code> 
+    git reset --hard
+
+</code>
                     </pre>
                     <p>
                         Удаляем коммит. 
                     </p>
                     <pre>
-<code> git revert [хеш-коммита]</code>
+<code> 
+    git revert [хеш-коммита]
+
+</code>
                     </pre>
                 </article>
             </main>
