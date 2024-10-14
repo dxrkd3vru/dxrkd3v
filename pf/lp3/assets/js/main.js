@@ -30,7 +30,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== SWIPER SHOE ===============*/
 let swiperShoes = new Swiper('.home__swiper', {
-    lop: true,
+    loop: true,
     spaceBetween: 32,
     grabCursor: true,
     // If we need pagination

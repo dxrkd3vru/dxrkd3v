@@ -207,6 +207,7 @@ img {
 .home__circle {
   width: 250px;
   height: 250px;
+  background-color: slategray;
   background: linear-gradient(180deg,
               hsl(0, 0%, 100),
               hsl(0, 0%, 96%));
