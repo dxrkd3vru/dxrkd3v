@@ -26,9 +26,19 @@ const linkAction = () =>{
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
 }
-navLink.forEach(n => n.addEventListener('click', linkAction))
+navLink.forEach(n => n.addEventListener('click', linkAction)) 
 
 /*=============== SWIPER SHOE ===============*/
-
+let swiperShoes = new Swiper('.home__swiper', {
+    lop: true,
+    spaceBetween: 32,
+    grabCursor: true,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  })
+  
 
 /*=============== SHADOW HEADER ===============*/
