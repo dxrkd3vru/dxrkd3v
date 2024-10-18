@@ -30,9 +30,20 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== SWIPER SHOE ===============*/
 let swiperShoes = new Swiper('.home__swiper', {
-    lop: true,
+    loop: true,
     spaceBetween: 32,
     grabCursor: true,
+    effect: 'creative',
+    creativeEffect: {
+        prev:{
+            translate: [-100, 0, -500],
+            opacity: 0,
+        },
+        next:{
+            translate: [100, 0, -500],
+            opacity: 0,
+        },
+    },
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
@@ -42,3 +53,9 @@ let swiperShoes = new Swiper('.home__swiper', {
   
 
 /*=============== SHADOW HEADER ===============*/
+const shadowHeader = () => {
+    const header = document.getElementById('header')
+    this.scrollY >= 50 ? header.classList.add('shadow-header')
+                       : header.classList.remove('shadow-header')
+}
+window.addEventListener('scroll', shadowHeader)
